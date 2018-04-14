@@ -9,7 +9,7 @@ public class EnemyDestroy : MonoBehaviour {
 		if(collider.gameObject.CompareTag ("Enemy")){
 
 			Destroy (collider.gameObject);
-
+			Destroy (gameObject);
 		}
 
 	}
