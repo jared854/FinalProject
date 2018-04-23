@@ -1782,7 +1782,6 @@ GameObject:
   - component: {fileID: 1320866366}
   - component: {fileID: 1320866359}
   - component: {fileID: 1320866360}
-  - component: {fileID: 1320866367}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1809,7 +1808,7 @@ MonoBehaviour:
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
-  m_MouseLook: {fileID: 1320866367}
+  m_MouseLook: {fileID: 1516952661}
   m_UseFovKick: 1
   m_FovKick:
     Camera: {fileID: 0}
@@ -2068,25 +2067,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1320866367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320866358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e60a97f2c87ae41b6cdc1055d78cb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XSensitivity: 2
-  YSensitivity: 2
-  clampVerticalRotation: 1
-  MinimumX: -90
-  MaximumX: 90
-  smooth: 0
-  smoothTime: 5
-  lockCursor: 1
 --- !u!54 &1320866369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2224,7 +2204,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
       propertyPath: m_TagString
-      value: isGrounded
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65405201688491918, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
@@ -2278,6 +2262,7 @@ GameObject:
   - component: {fileID: 1516952660}
   - component: {fileID: 1516952659}
   - component: {fileID: 1516952658}
+  - component: {fileID: 1516952661}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -2353,6 +2338,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1516952661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516952656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e60a97f2c87ae41b6cdc1055d78cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XSensitivity: 2
+  YSensitivity: 2
+  clampVerticalRotation: 1
+  MinimumX: -90
+  MaximumX: 90
+  smooth: 0
+  smoothTime: 5
+  lockCursor: 1
 --- !u!1 &1561692453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,7 +2526,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
       propertyPath: m_TagString
-      value: isGrounded
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65405201688491918, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
@@ -2595,7 +2603,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
       propertyPath: m_TagString
-      value: isGrounded
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65405201688491918, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
@@ -2814,7 +2826,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
       propertyPath: m_TagString
-      value: isGrounded
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991894012405926, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65405201688491918, guid: 443ae990abac24188b73879cbc53a4e3, type: 2}
