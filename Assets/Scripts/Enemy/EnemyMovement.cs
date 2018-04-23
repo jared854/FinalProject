@@ -10,6 +10,16 @@ public class EnemyMovement : MonoBehaviour
 	//EnemyHealth enemyHealth;        // Reference to this enemy's health.
 	NavMeshAgent nav;          // Reference to the nav mesh agent.
 
+	public bool hunting = false;
+
+	public float minX = 1;
+	public float maxX = 10;
+	public float minZ = 1;
+	public float maxZ = 10;
+
+	public float tarX;
+	public float tarZ;
+
 
 	void Awake ()
 	{
@@ -18,6 +28,7 @@ public class EnemyMovement : MonoBehaviour
 		//playerHealth = player.GetComponent <PlayerHealth> ();
 		//enemyHealth = GetComponent <EnemyHealth> ();
 		nav = GetComponent <NavMeshAgent> ();
+		randomTarget ();
 	}
 
 
@@ -27,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
 		//if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
 		//{
 			// ... set the destination of the nav mesh agent to the player.
-			nav.SetDestination (player.position);
+			//nav.SetDestination (player.position);
 		//}
 		// Otherwise...
 		//else
@@ -35,5 +46,19 @@ public class EnemyMovement : MonoBehaviour
 		// ... disable the nav mesh agent.
 //			nav.enabled = false;
 //		}
+
+		if (hunting) {
+			nav.SetDestination (player.position);
+		} if (transform.position.x < tarX + 1 && transform.position.x > tarX - 1
+			&& transform.position.z < tarZ + 1 && transform.position.z > tarZ - 1) {
+			randomTarget ();
+		} else {
+			nav.SetDestination (new Vector3(tarX, transform.position.y, tarZ));
+		}
 	} 
+
+	void randomTarget() {
+		tarX = Random.Range (minX, maxX);
+		tarZ = Random.Range (minZ, maxZ);
+	}
 }
