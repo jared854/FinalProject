@@ -1193,7 +1193,7 @@ Prefab:
         type: 2}
       propertyPath: m_MouseLook
       value: 
-      objectReference: {fileID: 853565804}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114135486769095406, guid: 0858bca724d324692816b48d38ba88fe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0858bca724d324692816b48d38ba88fe, type: 2}
@@ -1211,17 +1211,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 853565803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e60a97f2c87ae41b6cdc1055d78cb9, type: 3}
+  m_Script: {fileID: 11500000, guid: e633271aabda14769a3ef8ba6cf73d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSensitivity: 2
-  YSensitivity: 2
-  clampVerticalRotation: 1
-  MinimumX: -90
-  MaximumX: 90
-  smooth: 0
-  smoothTime: 5
-  lockCursor: 1
+  inputX: 0
+  inputY: 0
 --- !u!4 &931891192 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4550340480503562, guid: 1bd7f8121dbb842c7857d35a3775171a,
