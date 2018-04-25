@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Note_scene_Final.unity
     guid: f56a71566d6be4a2cb171b1e4472dc83
+  - enabled: 1
+    path: Assets/Scenes/Level_Final.unity
+    guid: 67d6d7ad22d444888baa0ef4b90a83ac
