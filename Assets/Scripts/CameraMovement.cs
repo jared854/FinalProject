@@ -18,10 +18,10 @@ public class CameraMovement : MonoBehaviour {
 	}
 
 	void rotate(){
-		transform.Rotate (new Vector3 (0f, inputY * Time.deltaTime, 0f));
+		transform.Rotate (new Vector3 (0.2f, inputY * Time.deltaTime, 0f));
 	}
 
 	void move(){
-		transform.position += transform.forward * inputY * Time.deltaTime;
+		transform.position += transform.forward * inputX * Time.deltaTime;
 	}
 }
