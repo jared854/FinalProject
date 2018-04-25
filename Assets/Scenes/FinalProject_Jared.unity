@@ -1214,8 +1214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e633271aabda14769a3ef8ba6cf73d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputX: 0
-  inputY: 0
+  inputX: 10
+  inputY: 10
 --- !u!4 &931891192 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4550340480503562, guid: 1bd7f8121dbb842c7857d35a3775171a,
