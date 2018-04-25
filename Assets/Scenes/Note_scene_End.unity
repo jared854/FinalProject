@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c16e1d94f634ccfb4d85057c0a667d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel1: {fileID: 0}
+  Panel1: {fileID: 1859887916}
   Panel2: {fileID: 1859887916}
 --- !u!1 &1255185297
 GameObject:

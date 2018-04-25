@@ -36,6 +36,8 @@ GameObject:
   - component: {fileID: 4213963516555426}
   - component: {fileID: 95183795261879732}
   - component: {fileID: 23979202774730060}
+  - component: {fileID: 114393166479134342}
+  - component: {fileID: 114854836588483522}
   m_Layer: 0
   m_Name: Ghost_Purple
   m_TagString: Untagged
@@ -227,7 +229,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229248872954672}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -11.25, y: 1.3, z: -21.045}
+  m_LocalPosition: {x: -4.725087, y: 0.68133783, z: 3.0889359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4448423402561242}
@@ -412,6 +414,28 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114393166479134342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229248872954672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ae2c8758084e649be4dce4bff39b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114854836588483522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229248872954672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ae2c8758084e649be4dce4bff39b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137187241565950458
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
