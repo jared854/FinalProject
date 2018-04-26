@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 82455209173030716}
   - component: {fileID: 114488806862142314}
   - component: {fileID: 114435397687959734}
+  - component: {fileID: 114980137644842222}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -60,7 +61,6 @@ GameObject:
   - component: {fileID: 20052977400382406}
   - component: {fileID: 124429854749167582}
   - component: {fileID: 81756997765048522}
-  - component: {fileID: 114135486769095406}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244354378835300}
   m_LocalRotation: {x: -0, y: 0.9996637, z: -0, w: 0.025932698}
-  m_LocalPosition: {x: 49.53, y: 32.99, z: 67.76}
+  m_LocalPosition: {x: -1.7, y: 32.99, z: 65.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4725753916175878}
@@ -445,25 +445,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114135486769095406
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1361787257918768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37e60a97f2c87ae41b6cdc1055d78cb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XSensitivity: 2
-  YSensitivity: 2
-  clampVerticalRotation: 1
-  MinimumX: -90
-  MaximumX: 90
-  smooth: 0
-  smoothTime: 5
-  lockCursor: 1
 --- !u!114 &114435397687959734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,7 +478,7 @@ MonoBehaviour:
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
-  m_MouseLook: {fileID: 114135486769095406}
+  m_MouseLook: {fileID: 0}
   m_UseFovKick: 1
   m_FovKick:
     Camera: {fileID: 0}
@@ -584,6 +565,19 @@ MonoBehaviour:
   weaponCamera: {fileID: 1787616341488572}
   mainCamera: {fileID: 20052977400382406}
   scopedFOV: 20
+--- !u!114 &114980137644842222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244354378835300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e633271aabda14769a3ef8ba6cf73d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputX: 10
+  inputY: 10
 --- !u!124 &124429854749167582
 Behaviour:
   m_ObjectHideFlags: 1

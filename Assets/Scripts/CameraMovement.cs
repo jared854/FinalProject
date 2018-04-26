@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour {
 	}
 
 	void rotate(){
-		transform.Rotate (new Vector3 (inputX, inputY, 0f));
+		transform.Rotate (new Vector3 (inputX, 0f, 0f));
 	}
 
 	void move(){

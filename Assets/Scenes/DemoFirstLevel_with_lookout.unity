@@ -4409,10 +4409,13 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a10d1f3307879f24fa4403887422c73f, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
+=======
 --- !u!4 &2061084640 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a10d1f3307879f24fa4403887422c73f, type: 2}
   m_PrefabInternal: {fileID: 2061084639}
+>>>>>>> c99b8abbc5652002a34b2bd9d883a456b707e686
 --- !u!1 &2124510420
 GameObject:
   m_ObjectHideFlags: 0
