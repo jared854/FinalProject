@@ -7,13 +7,14 @@ public class EnemyManager : MonoBehaviour
 	//public PlayerHealth playerHealth;       // Reference to the player's heatlh.
 	public GameObject enemy;                // The enemy prefab to be spawned.
 	public float spawnTime = 3f;            // How long between each spawn.
+	public float offset = 1f;				// How long the manager waits before spawning enemies
 	public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 
 
 	void Start ()
 	{
-		// Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-		InvokeRepeating ("Spawn", spawnTime, spawnTime);
+		// Call the Spawn function after a delay of the offset and then continue to call after the same amount of time.
+		InvokeRepeating ("Spawn", offset, spawnTime);
 	}
 
 

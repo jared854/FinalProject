@@ -37,8 +37,8 @@ GameObject:
   - component: {fileID: 95183795261879732}
   - component: {fileID: 23979202774730060}
   - component: {fileID: 114203368541731150}
-  - component: {fileID: 136755473966102950}
   - component: {fileID: 136770037967211754}
+  - component: {fileID: 114297346866179134}
   m_Layer: 0
   m_Name: Ghost_Purple
   m_TagString: Enemy
@@ -431,19 +431,24 @@ MonoBehaviour:
   sinkSpeed: 2.5
   scoreValue: 10
   deathClip: {fileID: 0}
---- !u!136 &136755473966102950
-CapsuleCollider:
+--- !u!114 &114297346866179134
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229248872954672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5601816
-  m_Height: 1.249346
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hunting: 0
+  minX: 1
+  maxX: 10
+  minZ: 1
+  maxZ: 10
+  tarX: 0
+  tarZ: 0
 --- !u!136 &136770037967211754
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -451,7 +456,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229248872954672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 5
   m_Height: 1.249346

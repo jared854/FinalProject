@@ -48,8 +48,9 @@ public class EnemyMovement : MonoBehaviour
 //		}
 
 		if (hunting) {
+			print ("called");
 			nav.SetDestination (player.position);
-		} if (transform.position.x < tarX + 1 && transform.position.x > tarX - 1
+		} else if (transform.position.x < tarX + 1 && transform.position.x > tarX - 1
 			&& transform.position.z < tarZ + 1 && transform.position.z > tarZ - 1) {
 			randomTarget ();
 		} else {
