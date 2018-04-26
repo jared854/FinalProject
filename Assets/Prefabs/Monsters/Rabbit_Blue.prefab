@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 4799113850025174}
   - component: {fileID: 95136720971780606}
   - component: {fileID: 23800769058326094}
+  - component: {fileID: 114740943852788726}
   m_Layer: 0
   m_Name: Rabbit_Blue
   m_TagString: Untagged
@@ -686,15 +687,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948999420031530}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.04, y: -0.67, z: -23.73}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 32.16309, y: 1.1180606, z: -13.500767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4427150822778352}
   - {fileID: 4033922627995770}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!4 &4937603915599978
 Transform:
   m_ObjectHideFlags: 1
@@ -760,6 +761,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114740943852788726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948999420031530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ae2c8758084e649be4dce4bff39b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137917232287313320
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

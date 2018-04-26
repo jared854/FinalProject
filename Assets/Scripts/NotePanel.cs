@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NotePanel : MonoBehaviour {
 
@@ -25,4 +26,9 @@ public class NotePanel : MonoBehaviour {
 		Panel2.gameObject.SetActive (false);
 		Panel1.gameObject.SetActive (true);
 	}
+
+	public void changeScene (string scene) {
+		SceneManager.LoadScene (scene);
+	}
+
 }
