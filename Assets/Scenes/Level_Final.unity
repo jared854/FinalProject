@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5805524, g: 0.6203619, b: 0.70419437, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ Prefab:
       value: Slime_Red
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95292610024601834, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &25569425
@@ -452,7 +452,7 @@ Prefab:
       value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95136720971780606, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &309824358
@@ -693,67 +693,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bd7f8121dbb842c7857d35a3775171a, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &365012654 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1984194646812846, guid: 251f7db2613bc4bb48991792e4ee93de,
-    type: 2}
-  m_PrefabInternal: {fileID: 846352702}
---- !u!95 &365012655
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 365012654}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 922e9855964ff4838be5db00be29297b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &365012656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 365012654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunting: 0
-  minX: -100
-  maxX: 115
-  minZ: 60
-  maxZ: 100
-  tarX: 0
-  tarZ: 0
---- !u!195 &365012657
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 365012654}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!4 &365012660 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4810537188630774, guid: 251f7db2613bc4bb48991792e4ee93de,
@@ -1068,6 +1007,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &467778789
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467778784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6110306
+  m_Height: 1.2301307
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.115065336, z: 0.11103058}
 --- !u!1001 &537446577
 Prefab:
   m_ObjectHideFlags: 0
@@ -1300,70 +1252,9 @@ Prefab:
       value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95136720971780606, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &629292156 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1053947141797892, guid: 0798134623d2a42e788d33f48a1916f5,
-    type: 2}
-  m_PrefabInternal: {fileID: 2137925631}
---- !u!95 &629292157
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 629292156}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 328f8df66e71d435f9f5fd5813a7fb32, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!195 &629292158
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 629292156}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &629292159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 629292156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunting: 0
-  minX: -100
-  maxX: 115
-  minZ: 60
-  maxZ: 100
-  tarX: 0
-  tarZ: 0
 --- !u!4 &629292161 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4912866563046616, guid: 0798134623d2a42e788d33f48a1916f5,
@@ -1925,8 +1816,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 95292610024601834, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &851423543
@@ -2106,20 +1996,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1948999420031530, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
-      propertyPath: m_Name
-      value: Rabbit_Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799113850025174, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4799113850025174, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 95136720971780606, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &901668920
@@ -2338,6 +2215,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1060568526
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1060568522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5417328
+  m_Height: 1.1329861
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.066493034, z: 0.041732788}
 --- !u!4 &1060568529 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4213963516555426, guid: 607062f6f2a934383a50045ff836a088,
@@ -2443,72 +2333,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1086080047 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1948999420031530, guid: ace06bac975ed4ea68bfd123439c7493,
-    type: 2}
-  m_PrefabInternal: {fileID: 884968476}
 --- !u!4 &1086080048 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4799113850025174, guid: ace06bac975ed4ea68bfd123439c7493,
     type: 2}
   m_PrefabInternal: {fileID: 884968476}
---- !u!114 &1086080049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1086080047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunting: 0
-  minX: -100
-  maxX: 115
-  minZ: 60
-  maxZ: 100
-  tarX: 0
-  tarZ: 0
---- !u!195 &1086080050
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1086080047}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!95 &1086080051
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1086080047}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 882241c50806f4fe9851150ed75c9d08, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1087731076 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1948999420031530, guid: ace06bac975ed4ea68bfd123439c7493,
@@ -2728,7 +2557,7 @@ Prefab:
       value: Slime_Green
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95648578696644344, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1208861400
@@ -3334,50 +3163,6 @@ MonoBehaviour:
   maxZ: 25
   tarX: 0
   tarZ: 0
---- !u!1 &1482652662 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1993046886384742, guid: 2ddd99860bf9744b1b1ded1a2cceae57,
-    type: 2}
-  m_PrefabInternal: {fileID: 1159300345}
---- !u!114 &1482652663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1482652662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunting: 0
-  minX: -100
-  maxX: 115
-  minZ: 60
-  maxZ: 100
-  tarX: 0
-  tarZ: 0
---- !u!195 &1482652664
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1482652662}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!4 &1482652668 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4062923562711400, guid: 2ddd99860bf9744b1b1ded1a2cceae57,
@@ -3562,30 +3347,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4016378886186794, guid: 432f25cbea12e4914a7e774361668299, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 114665271172839292, guid: 432f25cbea12e4914a7e774361668299,
-        type: 2}
-      propertyPath: minX
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114665271172839292, guid: 432f25cbea12e4914a7e774361668299,
-        type: 2}
-      propertyPath: maxX
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 114665271172839292, guid: 432f25cbea12e4914a7e774361668299,
-        type: 2}
-      propertyPath: minZ
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114665271172839292, guid: 432f25cbea12e4914a7e774361668299,
-        type: 2}
-      propertyPath: maxZ
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 432f25cbea12e4914a7e774361668299, type: 2}
   m_IsPrefabParent: 0
@@ -3637,7 +3398,7 @@ Prefab:
       value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95136720971780606, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1641800294
@@ -3684,7 +3445,7 @@ Prefab:
       value: Slime_Green
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95648578696644344, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1663323463
@@ -3957,55 +3718,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224876505515840322, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a,
     type: 2}
   m_PrefabInternal: {fileID: 1061037604}
---- !u!1 &1760466609 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1458796819190786, guid: 74067c8deaef3489c8753f817ab3145b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1225283258}
 --- !u!4 &1760466610 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4853609549129718, guid: 74067c8deaef3489c8753f817ab3145b,
     type: 2}
   m_PrefabInternal: {fileID: 1225283258}
---- !u!114 &1760466611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760466609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunting: 0
-  minX: -175
-  maxX: 70
-  minZ: -80
-  maxZ: 25
-  tarX: 0
-  tarZ: 0
---- !u!195 &1760466612
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760466609}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1770838362
 Prefab:
   m_ObjectHideFlags: 0
@@ -4110,7 +3827,7 @@ Prefab:
       value: Slime_Red
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95292610024601834, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 251f7db2613bc4bb48991792e4ee93de, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1835462603 stripped
@@ -4719,7 +4436,7 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 95136720971780606, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ace06bac975ed4ea68bfd123439c7493, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2118066399
@@ -4804,8 +4521,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 95648578696644344, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0798134623d2a42e788d33f48a1916f5, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &2144092722 stripped
