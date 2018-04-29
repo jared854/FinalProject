@@ -17,8 +17,10 @@ public class Scope : MonoBehaviour {
 	private bool isScoped = false;
 
 	void Update (){ 
+		//if the q button is pressed then it goes into the scoped view
 		if(Input.GetKeyDown(KeyCode.Q)){
 			isScoped = !isScoped;
+			//switches between idle animation and scoped
 			animator.SetBool ("isScoped", isScoped); 
 
 			if (isScoped) {
@@ -30,6 +32,7 @@ public class Scope : MonoBehaviour {
 	}
 
 	void OnUnscoped(){
+		//switches back from scoped view to unscoped
 		scopeOverlay.SetActive (false);
 		weaponCamera.SetActive (true);
 
@@ -37,10 +40,11 @@ public class Scope : MonoBehaviour {
 	}
 
 	IEnumerator OnScoped(){
+		//wait time is to allow for full animation to happen
 		yield return new WaitForSeconds (.15f);
 		scopeOverlay.SetActive (true);
 		weaponCamera.SetActive (false);
-
+		//field of view allows for the scoped function to zoom in 
 		normalFOV = mainCamera.fieldOfView;
 		mainCamera.fieldOfView = scopedFOV;
 	}

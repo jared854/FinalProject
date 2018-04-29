@@ -6,34 +6,20 @@ using UnityEngine.AI;
 public class FinalEnemyMovement : MonoBehaviour
 {
 	Transform player;               // Reference to the player's position.
-	//PlayerHealth playerHealth;      // Reference to the player's health.
-	//EnemyHealth enemyHealth;        // Reference to this enemy's health.
 	NavMeshAgent nav;               // Reference to the nav mesh agent.
 
 
 	void Awake ()
 	{
-		// Set up the references.
+		// finds tag of player and that is what the enemies follow in the navmesh
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
-//		playerHealth = player.GetComponent <PlayerHealth> ();
-//		enemyHealth = GetComponent <EnemyHealth> ();
 		nav = GetComponent <NavMeshAgent> ();
 	}
 
 
 	void Update ()
 	{
-		// If the enemy and the player have health left...
-//		if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
-//		{
-			// ... set the destination of the nav mesh agent to the player.
-			nav.SetDestination (player.position);
-//		}
-//		// Otherwise...
-//		else
-//		{
-//			// ... disable the nav mesh agent.
-//			nav.enabled = false;
-//		}
+		//navigation follows player 
+		nav.SetDestination (player.position);
 	} 
 }
