@@ -20,13 +20,13 @@ public class PlayerControl : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			Fire();
+			StartCoroutine (Fire ());
 		}
 
 	}
 
 
-	void Fire()
+	private IEnumerator Fire()
 	{
 		// Create the Bullet from the Bullet Prefab
 		var bullet = (GameObject)Instantiate(
@@ -36,7 +36,19 @@ public class PlayerControl : MonoBehaviour
 
 		// Add velocity to the bullet
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletSpeed;
+
+		yield return new WaitForSeconds (5);
+
+		Destroy (bullet.gameObject); 
        
+	}
+
+	void OnTriggerEnter (Collider collider){
+		//If player touches an enemy (only possible in final level)
+		if(collider.gameObject.CompareTag ("Enemy")){
+			LevelManager.instance.ChangeLevel ();
+		}
+
 	}
 
 }

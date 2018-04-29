@@ -10,7 +10,7 @@ public class EnemyDestroy : MonoBehaviour {
 		//put on the bullet, set to destroy enemy when hit
 		if(collider.gameObject.CompareTag ("Enemy")){
 
-			collider.gameObject.GetComponent<EnemyHealth> ().Death ();
+			collider.gameObject.GetComponent<EnemyAttributes> ().Death ();
 			Destroy(collider.gameObject);
 			Destroy (gameObject);
 		}

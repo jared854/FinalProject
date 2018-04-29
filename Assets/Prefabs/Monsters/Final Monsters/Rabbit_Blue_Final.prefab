@@ -787,11 +787,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e643e025f1d2412db9f0f0f43e76c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
   deathClip: {fileID: 0}
+  killPoints: 50
+  isTarget: 0
 --- !u!114 &114605855809210890
 MonoBehaviour:
   m_ObjectHideFlags: 1
