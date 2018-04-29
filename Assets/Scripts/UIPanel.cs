@@ -26,7 +26,7 @@ public class UIPanel : MonoBehaviour {
 	}
 
 
-	public int totalPoints = 0;			//Current points
+	public static int totalPoints = 0;			//Current points
 	public float enemiesHit = 0;			//Current number of target enemies hit
 	public float maxHitsLevel = 0;			//The number of target enemies needed to progress to the next level
 
