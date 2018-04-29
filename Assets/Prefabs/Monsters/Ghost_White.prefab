@@ -187,10 +187,13 @@ GameObject:
   - component: {fileID: 4062923562711400}
   - component: {fileID: 95957010872188300}
   - component: {fileID: 23817217762093284}
-  - component: {fileID: 114035748470076570}
+  - component: {fileID: 114992385579932148}
+  - component: {fileID: 195105276862752978}
+  - component: {fileID: 136401912887878434}
+  - component: {fileID: 114347133306977740}
   m_Layer: 0
   m_Name: Ghost_White
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1993046886384742}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -12.917862, y: 0.68133783, z: 19.657995}
+  m_LocalPosition: {x: -47.32621, y: 27.507456, z: 107.96417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4746134390005114}
@@ -413,7 +416,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114035748470076570
+--- !u!114 &114347133306977740
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -421,9 +424,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993046886384742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d80ae2c8758084e649be4dce4bff39b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e643e025f1d2412db9f0f0f43e76c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 0}
+--- !u!114 &114992385579932148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993046886384742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2631178d8498b45f9b9c173bc5c6d2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hunting: 0
+  minX: -100
+  maxX: 115
+  minZ: 60
+  maxZ: 100
+  tarX: 0
+  tarZ: 0
+--- !u!136 &136401912887878434
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993046886384742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5662842
+  m_Height: 1.1541214
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.0770607, z: 0.06628418}
 --- !u!137 &137779170493785044
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -474,3 +513,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.07901556, y: 0.0014557838, z: 0.00000011920929}
     m_Extent: {x: 0.24167904, y: 0.27139536, z: 0.25379908}
   m_DirtyAABB: 0
+--- !u!195 &195105276862752978
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993046886384742}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
