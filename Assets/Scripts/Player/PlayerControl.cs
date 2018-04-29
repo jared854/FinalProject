@@ -11,6 +11,7 @@ public class PlayerControl : MonoBehaviour
 
 	void Update()
 	{
+		//player controls dictated by axis inputs
 		var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
 		var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
 
