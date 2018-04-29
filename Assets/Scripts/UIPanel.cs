@@ -10,23 +10,63 @@ public class UIPanel : MonoBehaviour {
 	[SerializeField] RectTransform pointSlider;
 	[SerializeField] Text pointsText;
 
-	public static int totalPoints = 0;
+	public static UIPanel _instance;
+
+
+	public static UIPanel instance {
+		get {
+			if (_instance == null) {
+				_instance = GameObject.FindObjectOfType<UIPanel> ();
+				if (_instance == null) {
+					throw new UnityException ("Instance of UIPanel not found in scene");
+				}
+			}
+			return _instance;
+		}
+	}
+
+
+	public int totalPoints = 0;			//Current points
+	public float enemiesHit = 0;			//Current number of target enemies hit
+	public float maxHitsLevel = 0;			//The number of target enemies needed to progress to the next level
 
 	void Start(){
+		if (_instance != null) {
+			Destroy (_instance.gameObject);
+		}
+		_instance = this;
+
+		ClearSlider ();
 		UpdatePoints (0);
 		UpdateSlider (1, 0);
 	}
 
-	void UpdateSlider(int maxPoints, int points){
+	void Update() {
+		if (enemiesHit == maxHitsLevel) {
+			LevelManager.instance.ChangeLevel ();
+		}
+	}
+
+	public void UpdateSlider(){
 		if (pointSlider == null)
 			return;
-		float relativeScale = (float)points / (float)maxPoints;
+		float relativeScale = (1.0f + enemiesHit) / (float)maxHitsLevel;
+		enemiesHit++;
 		Vector3 scale = pointSlider.transform.localScale;
 		scale.x = relativeScale;
 		pointSlider.transform.localScale = scale;
 	}
 
-	void UpdatePoints(int addPoints){
+	public void UpdateSlider(int maxHits, int points){
+		if (pointSlider == null)
+			return;
+		float relativeScale = (float)points / (float)maxHits;
+		Vector3 scale = pointSlider.transform.localScale;
+		scale.x = relativeScale;
+		pointSlider.transform.localScale = scale;
+	}
+
+	public void UpdatePoints(int addPoints){
 		if (pointsText == null)
 			return;
 		string format = "D2"; // D2 means decimal format with a minimum of 2 digits, for one digit numbers this will give a preceding 0;
@@ -35,7 +75,7 @@ public class UIPanel : MonoBehaviour {
 		pointsText.text = totalPoints.ToString (format);
 	}
 
-	void ClearSlider(){
+	public void ClearSlider(){
 		UpdateSlider (1, 0);
 	}
 }

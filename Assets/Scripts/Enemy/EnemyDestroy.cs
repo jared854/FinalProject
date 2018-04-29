@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyDestroy : MonoBehaviour {
 
+	GameObject enemy;
+
 	void OnTriggerEnter (Collider collider){
 		//put on the bullet, set to destroy enemy when hit
 		if(collider.gameObject.CompareTag ("Enemy")){
 
-			Destroy (collider.gameObject);
+			collider.gameObject.GetComponent<EnemyHealth> ().Death ();
+			Destroy(collider.gameObject);
 			Destroy (gameObject);
 		}
 
