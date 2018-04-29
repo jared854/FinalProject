@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 54442694550436872}
   - component: {fileID: 135896150352652932}
   - component: {fileID: 195197183769722158}
-  - component: {fileID: 114297067070658042}
   - component: {fileID: 114092204749018620}
   m_Layer: 8
   m_Name: Final Enemy
@@ -114,22 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4105d9733354d4c41b3f569d7e6529c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114297067070658042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1268909798992682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e643e025f1d2412db9f0f0f43e76c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
-  deathClip: {fileID: 0}
 --- !u!135 &135896150352652932
 SphereCollider:
   m_ObjectHideFlags: 1
