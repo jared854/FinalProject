@@ -129,10 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e643e025f1d2412db9f0f0f43e76c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
   deathClip: {fileID: 0}
   killPoints: 50
   isTarget: 1
@@ -524,6 +520,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &78699496 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1833238604668796, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a,
+    type: 2}
+  m_PrefabInternal: {fileID: 78699495}
 --- !u!1001 &148860046
 Prefab:
   m_ObjectHideFlags: 0
@@ -2449,10 +2450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e643e025f1d2412db9f0f0f43e76c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
   deathClip: {fileID: 0}
   killPoints: -50
   isTarget: 0
@@ -4396,7 +4393,7 @@ Prefab:
         type: 2}
       propertyPath: scopeOverlay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 78699496}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0858bca724d324692816b48d38ba88fe, type: 2}
   m_IsPrefabParent: 0

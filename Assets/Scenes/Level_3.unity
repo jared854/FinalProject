@@ -543,6 +543,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &78699496 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1833238604668796, guid: 42c7b1eb7832b41ad8cef8ea6fc2288a,
+    type: 2}
+  m_PrefabInternal: {fileID: 78699495}
 --- !u!1 &88050501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +4525,7 @@ Prefab:
         type: 2}
       propertyPath: scopeOverlay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 78699496}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0858bca724d324692816b48d38ba88fe, type: 2}
   m_IsPrefabParent: 0
